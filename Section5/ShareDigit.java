@@ -1,3 +1,4 @@
+package Section5;
 
 public class ShareDigit {
 	public static void main(String[] args) {

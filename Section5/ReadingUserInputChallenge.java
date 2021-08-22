@@ -1,3 +1,4 @@
+package Section5;
 import java.util.Scanner;
 
 public class ReadingUserInputChallenge {
