@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Section4/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Section4/src"/>
+	<classpathentry kind="output" path="Section4/out/production/SpeedConverter"/>
+</classpath>

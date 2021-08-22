@@ -1,4 +1,4 @@
-package com.model;
+package SchoolSystem.model;
 
 public class Security extends Employee{
 

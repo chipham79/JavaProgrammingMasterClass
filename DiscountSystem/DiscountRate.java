@@ -1,4 +1,4 @@
-package discountsystem;
+package DiscountSystem;
 
 public class DiscountRate {
 	private static double serviceDiscountPremium = 0.2;

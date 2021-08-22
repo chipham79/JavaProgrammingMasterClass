@@ -1,4 +1,4 @@
-package examabstract;
+package ExamAbstract;
 
 public class Cat extends Animal{
 

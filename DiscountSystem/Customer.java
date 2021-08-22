@@ -1,4 +1,4 @@
-package discountsystem;
+package DiscountSystem;
 
 public class Customer {
 	private String name;

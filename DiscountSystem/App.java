@@ -1,4 +1,4 @@
-package discountsystem;
+package DiscountSystem;
 
 import java.text.DateFormat;
 import java.text.ParseException;

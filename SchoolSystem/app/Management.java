@@ -1,13 +1,13 @@
-package com.app;
+package SchoolSystem.app;
 
 
 
 import java.util.Scanner;
 
-import com.model.Clazz;
-import com.model.School;
-import com.model.Student;
-import com.model.Teacher;
+import SchoolSystem.model.Clazz;
+import SchoolSystem.model.School;
+import SchoolSystem.model.Student;
+import SchoolSystem.model.Teacher;
 
 
 public class Management {
