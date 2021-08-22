@@ -5,18 +5,18 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Visit {
-	private Customer name;
+	private Customer customer;
 	private Date date;
 	private double serviceExpense;
 	private double productExpense;
 	
-	public Visit( Customer name, Date date) {
-		this.name = name;
+	public Visit( Customer customer, Date date) {
+		this.customer = customer;
 		this.date = date;
 	}
 	
 	public String getName( ) {
-		return name.getName();
+		return customer.getName();
 	}
 	
 	public double getServiceExpense() {
@@ -36,18 +36,18 @@ public class Visit {
 	}
 	
 	public double getTotalExpense() {
-		return ( serviceExpense - (serviceExpense * DiscountRate.getSeriveDiscountRate(name.getMemberType())))
-				+ (productExpense - (productExpense * DiscountRate.getProductDiscountRate(name.getMemberType())));
+		return ( serviceExpense - (serviceExpense * DiscountRate.getSeriveDiscountRate(customer.getMemberType())))
+				+ (productExpense - (productExpense * DiscountRate.getProductDiscountRate(customer.getMemberType())));
 	}
 	
 	
 	
 	public String toString() {
 		DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
-		return "Customer name = " + name.getName() + 
+		return "Customer name = " + customer.getName() + 
 				" , date " + df.format(this.date) +
-				" , customer member = " + name.isMember() +
-				" , customer type = " + name.getMemberType() +
+				" , customer member = " + customer.isMember() +
+				" , customer type = " + customer.getMemberType() +
 				" , service expense = " + this.serviceExpense +
 				" , product expense = " + this.productExpense;
 	}
