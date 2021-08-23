@@ -2,14 +2,14 @@ package Section6oop.SumCalculator;
 
 public class SimpleCalculator {
 	private double firstNumber;
-	private double sencondNumber;
+	private double secondNumber;
 	
 	public double getFirstNumber() {
 		return this.firstNumber;
 	}
 	
 	public double getSecondNumber() {
-		return this.sencondNumber;
+		return this.secondNumber;
 	}
 	
 	public void setFirstNumber(double firstNumber) {
@@ -17,26 +17,26 @@ public class SimpleCalculator {
 	}
 	
 	public void setSecondNumber(double sencondNumber) {
-		this.sencondNumber = sencondNumber;
+		this.secondNumber = sencondNumber;
 	}
 	
 	public double getAdditionResult() {
-		return this.firstNumber + this.sencondNumber;
+		return this.firstNumber + this.secondNumber;
 	}
 	
 	public double getSubtractionResult() {
-		return this.sencondNumber - this.firstNumber;
+		return this.firstNumber - this.secondNumber;
 	}
 	
 	public double getMultiplicationResult() {
-		return this.sencondNumber * this.firstNumber;
+		return this.secondNumber * this.firstNumber;
 	}
 	
 	public double getDivisionResult() {
-		if (this.sencondNumber == 0) {
+		if (this.secondNumber == 0) {
 			return 0;
 		}
-		return this.firstNumber / this.sencondNumber;
+		return this.firstNumber / this.secondNumber;
 	}
 	
 	public static void main(String[] args) {
