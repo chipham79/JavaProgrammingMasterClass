@@ -1,3 +1,4 @@
+package Section4;
 
 public class EvenDigitSum {
 	public static void main(String[] args) {

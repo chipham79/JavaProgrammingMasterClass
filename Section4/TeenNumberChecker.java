@@ -1,3 +1,4 @@
+package Section4;
 
 public class TeenNumberChecker {
 	public static boolean hasTeen( int age1, int age2, int age3) {
