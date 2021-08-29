@@ -19,7 +19,6 @@ public class Hamburger {
 	private double addition4Price;
 	
 	public Hamburger(String name, String meat, double price, String breadRollType) {
-		super();
 		this.name = name;
 		this.meat = meat;
 		this.price = price;
