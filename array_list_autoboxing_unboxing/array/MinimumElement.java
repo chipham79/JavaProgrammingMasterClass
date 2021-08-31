@@ -5,34 +5,40 @@ import java.util.Scanner;
 public class MinimumElement {
 	private static Scanner scanner = new Scanner(System.in);
 	
-	public static int[] readIntergers(int count) {
+	private static int[] readElements(int count) {
 		int[] array = new int[count];
-		System.out.println("Enter the number in array: ");
 		for(int i = 0; i < array.length; i++) {
+			System.out.println("Enter the number in array: ");
 			array[i] = scanner.nextInt();
 			scanner.nextLine();
 		}
 		return array;
 	}
 	
-	public static int findMin(int[] array) {
-		// int min = Integer.MAX_INTERGERS
+	private static int findMin(int[] array) {
 		int minInterger = array[0];
 		for(int i = 0; i < array.length; i++) {
 			minInterger = Math.min(minInterger, array[i]);
-			// int value = array[i];
-			// if(value < min) {
-			//	min = value		
-			//}
 		}
+/*		int min=Integer.MAX_VALUE;
+        for(int i=0; i<array.length; i++){
+            int value = array[i];
+            if(value < min){
+                min = value;*/
+		
 		return minInterger;
 	}
 	
-	public static void main(String[] args) {
+	private static int readInteger() {
 		System.out.println("Enter count: ");
 		int count = scanner.nextInt();
+		return count;
+	}
+	
+	public static void main(String[] args) {
+		int count = readInteger();
 		
-		int[] array = readIntergers(count);
+		int[] array = readElements(count);
 		System.out.println("Min = " + findMin(array));
 	}
 }
