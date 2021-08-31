@@ -10,6 +10,7 @@ public class MinimumElement {
 		System.out.println("Enter the number in array: ");
 		for(int i = 0; i < array.length; i++) {
 			array[i] = scanner.nextInt();
+			scanner.nextLine();
 		}
 		return array;
 	}
