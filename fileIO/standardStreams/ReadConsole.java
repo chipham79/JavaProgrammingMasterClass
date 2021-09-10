@@ -10,11 +10,11 @@ public class ReadConsole {
 		try {
 			cin = new InputStreamReader(System.in);
 			System.out.println("Enter characters, 'q' to quit" );
-			char c;
-			do {
+			char c = 0;
+			while ( c != 'q') {
 				c = (char) cin.read();
 				System.out.println(c);
-			} while ( c!= 'q'); 
+			} 
 		} finally {
 			if ( cin != null) {
 				cin.close();
