@@ -1,4 +1,4 @@
-package fileIO.characterStreams;
+package FileIO.characterStreams;
 
 
 import java.io.FileReader;

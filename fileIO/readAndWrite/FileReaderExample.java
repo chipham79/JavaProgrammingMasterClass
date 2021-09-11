@@ -1,4 +1,4 @@
-package fileIO.readAndWrite;
+package FileIO.readAndWrite;
 
 import java.io.File;
 import java.io.FileReader;

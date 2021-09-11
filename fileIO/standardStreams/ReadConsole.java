@@ -1,4 +1,4 @@
-package fileIO.standardStreams;
+package FileIO.standardStreams;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

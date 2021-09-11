@@ -1,4 +1,4 @@
-package fileIO.buffered;
+package FileIO.buffered;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
