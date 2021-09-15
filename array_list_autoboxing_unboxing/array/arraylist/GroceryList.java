@@ -22,7 +22,7 @@ public class GroceryList {
 	}
 	public void modifyGroceryItem(String currentItem, String newItem) {
 		int position = findItem(currentItem);
-		if(position > 0) {
+		if(position >= 0) {
 			modifyGroceryItem(position, newItem);
 		}
 	}
