@@ -21,7 +21,7 @@ public class TestLocation {
         locations.get(1).addExit("E", 3);
         locations.get(1).addExit("S", 4);
         locations.get(1).addExit("N", 5);
-        //locations.get(1).addExit("Q", 0); We replace at Location > on line 15
+        //locations.get(1).addExit("Q", 0); We replace 5 line to 1 at Location > on line 15
         
         locations.get(2).addExit("N", 5);
         locations.get(2).addExit("Q", 0);
@@ -37,7 +37,13 @@ public class TestLocation {
         locations.get(5).addExit("W", 2);
         //locations.get(5).addExit("Q", 0);
         
-        
+        Map<String, String> vocabulary = new HashMap<String, String>();
+        vocabulary.put("QUIT", "Q");
+        vocabulary.put("NORTH", "N");
+        vocabulary.put("SOUTH", "S");
+        vocabulary.put("WEST", "W");
+        vocabulary.put("EAST", "E");
+               
         int loc = 1;
         while(true) {
         	System.out.println(locations.get(loc).getDescription());
@@ -53,6 +59,15 @@ public class TestLocation {
         	System.out.println();
         	
         	String direction = scanner.nextLine().toUpperCase();
+        	if(direction.length() > 1) {
+        		String[] words = direction.split(" ");
+        		for( String word : words) {
+        			if(vocabulary.containsKey(word)) {
+        				direction = vocabulary.get(word);
+        				break;
+        			}
+        		}
+        	}
         	
         	if(exits.containsKey(direction)) {
         		loc = exits.get(direction);
@@ -61,7 +76,6 @@ public class TestLocation {
         		System.out.println("You cannot go in that direction");
         	}
         	
-        }
-		
+        }		
 	}
 }
