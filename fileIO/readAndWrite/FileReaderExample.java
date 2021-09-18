@@ -16,7 +16,7 @@ public class FileReaderExample {
 		FileWriter fileWriter = new FileWriter(file);
 		
 		//Write content to the file
-		fileWriter.write("This is an example");
+		fileWriter.write("It's an example");
 		fileWriter.flush();
 		fileWriter.close();
 		

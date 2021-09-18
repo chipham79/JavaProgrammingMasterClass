@@ -13,6 +13,7 @@ public class MainTest {
 		teamA.addPlayer(joe);
 		//teamA.addPlayer(pat); // get an error if we use Team<FootballPlayer>
 		//teamA.addPlayer(beck); // get an error if we use Team<FootballPlayer>
+	
 		
 		System.out.println(teamA.numPlayers());
 		
